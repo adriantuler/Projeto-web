@@ -1,0 +1,1 @@
+Aprendendo e treinando os conhecimentos adquiridos pelo curso dado pela Teknisa.
