@@ -1,17 +1,66 @@
-.container{
+body {
+    background: linear-gradient(to bottom, #e9f0fa, #d7e7f6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: gradientAnimation 10s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.container {
     text-align: center;
 }
 
-.body input{
+.body input {
     padding: 8px;
     margin-right: 8px;
 }
 
-.body button{
+.body button {
     padding: 8px 15px;
+    color: white;
+    background-color: blue;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-.footer{
+.body button:hover {
+    background-color: darkblue;
+}
+
+.footer {
     margin-top: 25px;
     font-size: 20px;
+}
+
+.invalid {
+    animation: blinkAnimation 1s infinite;
+    background-color: red;
+}
+
+.valid {
+    background-color: green;
+}
+
+.piscar {
+    animation: blinkAnimation 0.5s infinite alternate;
+}
+
+@keyframes blinkAnimation {
+    0% {
+        background-color: initial;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: initial;
+    }
 }
